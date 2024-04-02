@@ -1,0 +1,5 @@
+# ninja log v5
+0	31	1712078772220607884	CMakeFiles/github_little_try.dir/src/ADD.cpp.o	97d2c4300781dbb9
+0	201	1712079063855784844	CMakeFiles/github_little_try.dir/src/main.cpp.o	3dc79cc0794c3f3f
+27	91	1712079090436605069	../bin/github_little_try	3510b41104de2173
+0	27	1712079090372603126	CMakeFiles/github_little_try.dir/src/add.cpp.o	d021c5e3cb2e69d3

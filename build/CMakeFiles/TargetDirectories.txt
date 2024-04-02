@@ -1,0 +1,2 @@
+/home/huang/project1/test/little_try/build/CMakeFiles/edit_cache.dir
+/home/huang/project1/test/little_try/build/CMakeFiles/rebuild_cache.dir

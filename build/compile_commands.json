@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -I/home/huang/project1/test/little_try/include -g -std=gnu++11 -o CMakeFiles/github_little_try.dir/src/add.cpp.o -c /home/huang/project1/test/little_try/src/add.cpp",
+  "file": "/home/huang/project1/test/little_try/src/add.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -I/home/huang/project1/test/little_try/include -g -std=gnu++11 -o CMakeFiles/github_little_try.dir/src/main.cpp.o -c /home/huang/project1/test/little_try/src/main.cpp",
+  "file": "/home/huang/project1/test/little_try/src/main.cpp"
+}
+]
