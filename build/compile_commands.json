@@ -1,12 +1,47 @@
 [
 {
   "directory": "/home/huang/project1/test/little_try/build",
-  "command": "/usr/bin/clang++ -I/home/huang/project1/test/little_try/include -g -std=gnu++11 -o CMakeFiles/github_little_try.dir/src/add.cpp.o -c /home/huang/project1/test/little_try/src/add.cpp",
-  "file": "/home/huang/project1/test/little_try/src/add.cpp"
+  "command": "/usr/bin/clang++ -DEventPoller_EXPORTS -g -fPIC -std=gnu++17 -o src/EventPoller/CMakeFiles/EventPoller.dir/event_poller.cpp.o -c /home/huang/project1/test/little_try/src/EventPoller/event_poller.cpp",
+  "file": "/home/huang/project1/test/little_try/src/EventPoller/event_poller.cpp"
 },
 {
   "directory": "/home/huang/project1/test/little_try/build",
-  "command": "/usr/bin/clang++ -I/home/huang/project1/test/little_try/include -g -std=gnu++11 -o CMakeFiles/github_little_try.dir/src/main.cpp.o -c /home/huang/project1/test/little_try/src/main.cpp",
-  "file": "/home/huang/project1/test/little_try/src/main.cpp"
+  "command": "/usr/bin/clang++ -DSocket_EXPORTS -I/home/huang/project1/test/little_try/src/utility -g -fPIC -std=gnu++17 -o src/Socket/CMakeFiles/Socket.dir/client_socket.cpp.o -c /home/huang/project1/test/little_try/src/Socket/client_socket.cpp",
+  "file": "/home/huang/project1/test/little_try/src/Socket/client_socket.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -DSocket_EXPORTS -I/home/huang/project1/test/little_try/src/utility -g -fPIC -std=gnu++17 -o src/Socket/CMakeFiles/Socket.dir/server_socket.cpp.o -c /home/huang/project1/test/little_try/src/Socket/server_socket.cpp",
+  "file": "/home/huang/project1/test/little_try/src/Socket/server_socket.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -DSocket_EXPORTS -I/home/huang/project1/test/little_try/src/utility -g -fPIC -std=gnu++17 -o src/Socket/CMakeFiles/Socket.dir/socket.cpp.o -c /home/huang/project1/test/little_try/src/Socket/socket.cpp",
+  "file": "/home/huang/project1/test/little_try/src/Socket/socket.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -DSocketHandler_EXPORTS -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/utility -I/home/huang/project1/test/little_try/src/EventPoller -I/home/huang/project1/test/little_try/src/Task -g -fPIC -std=gnu++17 -o src/SocketHandler/CMakeFiles/SocketHandler.dir/socket_handler.cpp.o -c /home/huang/project1/test/little_try/src/SocketHandler/socket_handler.cpp",
+  "file": "/home/huang/project1/test/little_try/src/SocketHandler/socket_handler.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/utility -g -std=gnu++17 -o src/Task/CMakeFiles/Task.dir/echo_task.cpp.o -c /home/huang/project1/test/little_try/src/Task/echo_task.cpp",
+  "file": "/home/huang/project1/test/little_try/src/Task/echo_task.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -DUtility_EXPORTS -g -fPIC -std=gnu++17 -o src/utility/CMakeFiles/Utility.dir/Logger.cpp.o -c /home/huang/project1/test/little_try/src/utility/Logger.cpp",
+  "file": "/home/huang/project1/test/little_try/src/utility/Logger.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -I/home/huang/project1/test/little_try/src/utility -I/home/huang/project1/test/little_try/src/Task -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/SocketHandler -I/home/huang/project1/test/little_try/src/EventPoller -g -std=gnu++17 -o src/app/CMakeFiles/epoll_server.dir/server2.cpp.o -c /home/huang/project1/test/little_try/src/app/server2.cpp",
+  "file": "/home/huang/project1/test/little_try/src/app/server2.cpp"
+},
+{
+  "directory": "/home/huang/project1/test/little_try/build",
+  "command": "/usr/bin/clang++ -I/home/huang/project1/test/little_try/src/utility -I/home/huang/project1/test/little_try/src/Task -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/SocketHandler -I/home/huang/project1/test/little_try/src/EventPoller -g -std=gnu++17 -o src/app/CMakeFiles/client.dir/client.cpp.o -c /home/huang/project1/test/little_try/src/app/client.cpp",
+  "file": "/home/huang/project1/test/little_try/src/app/client.cpp"
 }
 ]

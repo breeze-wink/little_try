@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: github_little_try
+# Project: epoll
 # Configurations: Debug
 # =============================================================================
 
@@ -64,7 +64,481 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/huang/project1/test/little_try/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src && /usr/bin/cmake --regenerate-during-build -S/home/huang/project1/test/little_try -B/home/huang/project1/test/little_try/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/huang/project1/test/little_try/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target EventPoller
+
+
+#############################################
+# Order-only phony target for EventPoller
+
+build cmake_object_order_depends_target_EventPoller: phony || src/EventPoller/CMakeFiles/EventPoller.dir
+
+build src/EventPoller/CMakeFiles/EventPoller.dir/event_poller.cpp.o: CXX_COMPILER__EventPoller_Debug /home/huang/project1/test/little_try/src/EventPoller/event_poller.cpp || cmake_object_order_depends_target_EventPoller
+  DEFINES = -DEventPoller_EXPORTS
+  DEP_FILE = src/EventPoller/CMakeFiles/EventPoller.dir/event_poller.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  OBJECT_DIR = src/EventPoller/CMakeFiles/EventPoller.dir
+  OBJECT_FILE_DIR = src/EventPoller/CMakeFiles/EventPoller.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target EventPoller
+
+
+#############################################
+# Link the shared library ../lib/libEventPoller.so
+
+build ../lib/libEventPoller.so: CXX_SHARED_LIBRARY_LINKER__EventPoller_Debug src/EventPoller/CMakeFiles/EventPoller.dir/event_poller.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/EventPoller/CMakeFiles/EventPoller.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libEventPoller.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ../lib/libEventPoller.so
+  TARGET_PDB = EventPoller.so.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/EventPoller/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/EventPoller && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/EventPoller/edit_cache: phony src/EventPoller/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/EventPoller/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/EventPoller && /usr/bin/cmake --regenerate-during-build -S/home/huang/project1/test/little_try -B/home/huang/project1/test/little_try/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/EventPoller/rebuild_cache: phony src/EventPoller/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/huang/project1/test/little_try/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target Socket
+
+
+#############################################
+# Order-only phony target for Socket
+
+build cmake_object_order_depends_target_Socket: phony || cmake_object_order_depends_target_Utility
+
+build src/Socket/CMakeFiles/Socket.dir/client_socket.cpp.o: CXX_COMPILER__Socket_Debug /home/huang/project1/test/little_try/src/Socket/client_socket.cpp || cmake_object_order_depends_target_Socket
+  DEFINES = -DSocket_EXPORTS
+  DEP_FILE = src/Socket/CMakeFiles/Socket.dir/client_socket.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  INCLUDES = -I/home/huang/project1/test/little_try/src/utility
+  OBJECT_DIR = src/Socket/CMakeFiles/Socket.dir
+  OBJECT_FILE_DIR = src/Socket/CMakeFiles/Socket.dir
+
+build src/Socket/CMakeFiles/Socket.dir/server_socket.cpp.o: CXX_COMPILER__Socket_Debug /home/huang/project1/test/little_try/src/Socket/server_socket.cpp || cmake_object_order_depends_target_Socket
+  DEFINES = -DSocket_EXPORTS
+  DEP_FILE = src/Socket/CMakeFiles/Socket.dir/server_socket.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  INCLUDES = -I/home/huang/project1/test/little_try/src/utility
+  OBJECT_DIR = src/Socket/CMakeFiles/Socket.dir
+  OBJECT_FILE_DIR = src/Socket/CMakeFiles/Socket.dir
+
+build src/Socket/CMakeFiles/Socket.dir/socket.cpp.o: CXX_COMPILER__Socket_Debug /home/huang/project1/test/little_try/src/Socket/socket.cpp || cmake_object_order_depends_target_Socket
+  DEFINES = -DSocket_EXPORTS
+  DEP_FILE = src/Socket/CMakeFiles/Socket.dir/socket.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  INCLUDES = -I/home/huang/project1/test/little_try/src/utility
+  OBJECT_DIR = src/Socket/CMakeFiles/Socket.dir
+  OBJECT_FILE_DIR = src/Socket/CMakeFiles/Socket.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target Socket
+
+
+#############################################
+# Link the shared library ../lib/libSocket.so
+
+build ../lib/libSocket.so: CXX_SHARED_LIBRARY_LINKER__Socket_Debug src/Socket/CMakeFiles/Socket.dir/client_socket.cpp.o src/Socket/CMakeFiles/Socket.dir/server_socket.cpp.o src/Socket/CMakeFiles/Socket.dir/socket.cpp.o | ../lib/libUtility.so || ../lib/libUtility.so
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/huang/project1/test/little_try/lib  ../lib/libUtility.so
+  OBJECT_DIR = src/Socket/CMakeFiles/Socket.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libSocket.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ../lib/libSocket.so
+  TARGET_PDB = Socket.so.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/Socket/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/Socket && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/Socket/edit_cache: phony src/Socket/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/Socket/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/Socket && /usr/bin/cmake --regenerate-during-build -S/home/huang/project1/test/little_try -B/home/huang/project1/test/little_try/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/Socket/rebuild_cache: phony src/Socket/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/huang/project1/test/little_try/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target SocketHandler
+
+
+#############################################
+# Order-only phony target for SocketHandler
+
+build cmake_object_order_depends_target_SocketHandler: phony || cmake_object_order_depends_target_EventPoller cmake_object_order_depends_target_Socket cmake_object_order_depends_target_Task cmake_object_order_depends_target_Utility
+
+build src/SocketHandler/CMakeFiles/SocketHandler.dir/socket_handler.cpp.o: CXX_COMPILER__SocketHandler_Debug /home/huang/project1/test/little_try/src/SocketHandler/socket_handler.cpp || cmake_object_order_depends_target_SocketHandler
+  DEFINES = -DSocketHandler_EXPORTS
+  DEP_FILE = src/SocketHandler/CMakeFiles/SocketHandler.dir/socket_handler.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  INCLUDES = -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/utility -I/home/huang/project1/test/little_try/src/EventPoller -I/home/huang/project1/test/little_try/src/Task
+  OBJECT_DIR = src/SocketHandler/CMakeFiles/SocketHandler.dir
+  OBJECT_FILE_DIR = src/SocketHandler/CMakeFiles/SocketHandler.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target SocketHandler
+
+
+#############################################
+# Link the shared library ../lib/libSocketHandler.so
+
+build ../lib/libSocketHandler.so: CXX_SHARED_LIBRARY_LINKER__SocketHandler_Debug src/SocketHandler/CMakeFiles/SocketHandler.dir/socket_handler.cpp.o | ../lib/libSocket.so ../lib/libUtility.so ../lib/libTask.a ../lib/libEventPoller.so || ../lib/libEventPoller.so ../lib/libSocket.so ../lib/libTask.a ../lib/libUtility.so
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/huang/project1/test/little_try/lib  ../lib/libSocket.so  ../lib/libUtility.so  ../lib/libTask.a  ../lib/libEventPoller.so
+  OBJECT_DIR = src/SocketHandler/CMakeFiles/SocketHandler.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libSocketHandler.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ../lib/libSocketHandler.so
+  TARGET_PDB = SocketHandler.so.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/SocketHandler/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/SocketHandler && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/SocketHandler/edit_cache: phony src/SocketHandler/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/SocketHandler/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/SocketHandler && /usr/bin/cmake --regenerate-during-build -S/home/huang/project1/test/little_try -B/home/huang/project1/test/little_try/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/SocketHandler/rebuild_cache: phony src/SocketHandler/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/huang/project1/test/little_try/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Task
+
+
+#############################################
+# Order-only phony target for Task
+
+build cmake_object_order_depends_target_Task: phony || src/Task/CMakeFiles/Task.dir
+
+build src/Task/CMakeFiles/Task.dir/echo_task.cpp.o: CXX_COMPILER__Task_Debug /home/huang/project1/test/little_try/src/Task/echo_task.cpp || cmake_object_order_depends_target_Task
+  DEP_FILE = src/Task/CMakeFiles/Task.dir/echo_task.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/utility
+  OBJECT_DIR = src/Task/CMakeFiles/Task.dir
+  OBJECT_FILE_DIR = src/Task/CMakeFiles/Task.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Task
+
+
+#############################################
+# Link the static library ../lib/libTask.a
+
+build ../lib/libTask.a: CXX_STATIC_LIBRARY_LINKER__Task_Debug src/Task/CMakeFiles/Task.dir/echo_task.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/Task/CMakeFiles/Task.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../lib/libTask.a
+  TARGET_PDB = Task.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/Task/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/Task && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/Task/edit_cache: phony src/Task/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/Task/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/Task && /usr/bin/cmake --regenerate-during-build -S/home/huang/project1/test/little_try -B/home/huang/project1/test/little_try/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/Task/rebuild_cache: phony src/Task/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/huang/project1/test/little_try/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target Utility
+
+
+#############################################
+# Order-only phony target for Utility
+
+build cmake_object_order_depends_target_Utility: phony || src/utility/CMakeFiles/Utility.dir
+
+build src/utility/CMakeFiles/Utility.dir/Logger.cpp.o: CXX_COMPILER__Utility_Debug /home/huang/project1/test/little_try/src/utility/Logger.cpp || cmake_object_order_depends_target_Utility
+  DEFINES = -DUtility_EXPORTS
+  DEP_FILE = src/utility/CMakeFiles/Utility.dir/Logger.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  OBJECT_DIR = src/utility/CMakeFiles/Utility.dir
+  OBJECT_FILE_DIR = src/utility/CMakeFiles/Utility.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target Utility
+
+
+#############################################
+# Link the shared library ../lib/libUtility.so
+
+build ../lib/libUtility.so: CXX_SHARED_LIBRARY_LINKER__Utility_Debug src/utility/CMakeFiles/Utility.dir/Logger.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/utility/CMakeFiles/Utility.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libUtility.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ../lib/libUtility.so
+  TARGET_PDB = Utility.so.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/utility/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/utility && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/utility/edit_cache: phony src/utility/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/utility/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/utility && /usr/bin/cmake --regenerate-during-build -S/home/huang/project1/test/little_try -B/home/huang/project1/test/little_try/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/utility/rebuild_cache: phony src/utility/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/huang/project1/test/little_try/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target epoll_server
+
+
+#############################################
+# Order-only phony target for epoll_server
+
+build cmake_object_order_depends_target_epoll_server: phony || cmake_object_order_depends_target_EventPoller cmake_object_order_depends_target_Socket cmake_object_order_depends_target_SocketHandler cmake_object_order_depends_target_Task cmake_object_order_depends_target_Utility
+
+build src/app/CMakeFiles/epoll_server.dir/server2.cpp.o: CXX_COMPILER__epoll_server_Debug /home/huang/project1/test/little_try/src/app/server2.cpp || cmake_object_order_depends_target_epoll_server
+  DEP_FILE = src/app/CMakeFiles/epoll_server.dir/server2.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/huang/project1/test/little_try/src/utility -I/home/huang/project1/test/little_try/src/Task -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/SocketHandler -I/home/huang/project1/test/little_try/src/EventPoller
+  OBJECT_DIR = src/app/CMakeFiles/epoll_server.dir
+  OBJECT_FILE_DIR = src/app/CMakeFiles/epoll_server.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target epoll_server
+
+
+#############################################
+# Link the executable ../bin/epoll_server
+
+build ../bin/epoll_server: CXX_EXECUTABLE_LINKER__epoll_server_Debug src/app/CMakeFiles/epoll_server.dir/server2.cpp.o | ../lib/libTask.a ../lib/libSocketHandler.so ../lib/libSocket.so ../lib/libEventPoller.so ../lib/libTask.a ../lib/libUtility.so || ../lib/libEventPoller.so ../lib/libSocket.so ../lib/libSocketHandler.so ../lib/libTask.a ../lib/libUtility.so
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/huang/project1/test/little_try/lib  ../lib/libTask.a  ../lib/libSocketHandler.so  ../lib/libSocket.so  ../lib/libEventPoller.so  ../lib/libTask.a  ../lib/libUtility.so
+  OBJECT_DIR = src/app/CMakeFiles/epoll_server.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/epoll_server
+  TARGET_PDB = epoll_server.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target client
+
+
+#############################################
+# Order-only phony target for client
+
+build cmake_object_order_depends_target_client: phony || cmake_object_order_depends_target_Socket cmake_object_order_depends_target_Utility
+
+build src/app/CMakeFiles/client.dir/client.cpp.o: CXX_COMPILER__client_Debug /home/huang/project1/test/little_try/src/app/client.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = src/app/CMakeFiles/client.dir/client.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/huang/project1/test/little_try/src/utility -I/home/huang/project1/test/little_try/src/Task -I/home/huang/project1/test/little_try/src/Socket -I/home/huang/project1/test/little_try/src/SocketHandler -I/home/huang/project1/test/little_try/src/EventPoller
+  OBJECT_DIR = src/app/CMakeFiles/client.dir
+  OBJECT_FILE_DIR = src/app/CMakeFiles/client.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target client
+
+
+#############################################
+# Link the executable ../bin/client
+
+build ../bin/client: CXX_EXECUTABLE_LINKER__client_Debug src/app/CMakeFiles/client.dir/client.cpp.o | ../lib/libSocket.so ../lib/libUtility.so || ../lib/libSocket.so ../lib/libUtility.so
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/huang/project1/test/little_try/lib  ../lib/libSocket.so  ../lib/libUtility.so
+  OBJECT_DIR = src/app/CMakeFiles/client.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/client
+  TARGET_PDB = client.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/app/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/app && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/app/edit_cache: phony src/app/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/app/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/huang/project1/test/little_try/build/src/app && /usr/bin/cmake --regenerate-during-build -S/home/huang/project1/test/little_try -B/home/huang/project1/test/little_try/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/app/rebuild_cache: phony src/app/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build EventPoller: phony ../lib/libEventPoller.so
+
+build Socket: phony ../lib/libSocket.so
+
+build SocketHandler: phony ../lib/libSocketHandler.so
+
+build Task: phony ../lib/libTask.a
+
+build Utility: phony ../lib/libUtility.so
+
+build client: phony ../bin/client
+
+build epoll_server: phony ../bin/epoll_server
+
+build libEventPoller.so: phony ../lib/libEventPoller.so
+
+build libSocket.so: phony ../lib/libSocket.so
+
+build libSocketHandler.so: phony ../lib/libSocketHandler.so
+
+build libTask.a: phony ../lib/libTask.a
+
+build libUtility.so: phony ../lib/libUtility.so
 
 # =============================================================================
 # Folder targets.
@@ -74,7 +548,56 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/huang/project1/test/little_try/build
 
-build all: phony
+build all: phony src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/huang/project1/test/little_try/build/src
+
+build src/all: phony src/EventPoller/all src/Socket/all src/SocketHandler/all src/Task/all src/utility/all src/app/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/huang/project1/test/little_try/build/src/EventPoller
+
+build src/EventPoller/all: phony ../lib/libEventPoller.so
+
+# =============================================================================
+
+#############################################
+# Folder: /home/huang/project1/test/little_try/build/src/Socket
+
+build src/Socket/all: phony ../lib/libSocket.so
+
+# =============================================================================
+
+#############################################
+# Folder: /home/huang/project1/test/little_try/build/src/SocketHandler
+
+build src/SocketHandler/all: phony ../lib/libSocketHandler.so
+
+# =============================================================================
+
+#############################################
+# Folder: /home/huang/project1/test/little_try/build/src/Task
+
+build src/Task/all: phony ../lib/libTask.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/huang/project1/test/little_try/build/src/app
+
+build src/app/all: phony ../bin/epoll_server ../bin/client
+
+# =============================================================================
+
+#############################################
+# Folder: /home/huang/project1/test/little_try/build/src/utility
+
+build src/utility/all: phony ../lib/libUtility.so
 
 # =============================================================================
 # Built-in targets
@@ -83,14 +606,14 @@ build all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../src/EventPoller/CMakeLists.txt ../src/Socket/CMakeLists.txt ../src/SocketHandler/CMakeLists.txt ../src/Task/CMakeLists.txt ../src/app/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../src/CMakeLists.txt ../src/EventPoller/CMakeLists.txt ../src/Socket/CMakeLists.txt ../src/SocketHandler/CMakeLists.txt ../src/Task/CMakeLists.txt ../src/app/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################

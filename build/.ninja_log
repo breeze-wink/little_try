@@ -1,5 +1,19 @@
 # ninja log v5
-0	31	1712078772220607884	CMakeFiles/github_little_try.dir/src/ADD.cpp.o	97d2c4300781dbb9
-0	201	1712079063855784844	CMakeFiles/github_little_try.dir/src/main.cpp.o	3dc79cc0794c3f3f
-27	91	1712079090436605069	../bin/github_little_try	3510b41104de2173
-0	27	1712079090372603126	CMakeFiles/github_little_try.dir/src/add.cpp.o	d021c5e3cb2e69d3
+0	421	1712120208076877886	src/CMakeFiles/epoll_main.dir/server2.cpp.o	bf3d8170f8f09afe
+0	84	1712120207740876725	src/EventPoller/CMakeFiles/EventPoller.dir/event_poller.cpp.o	3bac1fd0ff8e21e2
+295	366	1712120715974634031	../bin/client	114dceac07b00e60
+1	371	1712120208028877720	src/Socket/CMakeFiles/Socket.dir/client_socket.cpp.o	2bc0b76a9ed5aed6
+621	690	1712120208348878827	../bin/epoll_main	ac13bdc8ae7e051a
+7	406	1712120208064877845	src/utility/CMakeFiles/Utility.dir/Logger.cpp.o	d8e54e561bdb5ca5
+84	192	1712120207852877112	../lib/libEventPoller.so	9f793a4059a350b2
+3	395	1712120208052877804	src/Task/CMakeFiles/Task.dir/echo_task.cpp.o	26cb6aad3a9d8f65
+2	295	1712120715898633769	src/app/CMakeFiles/client.dir/client.cpp.o	ee7008c2aef9f8bc
+556	621	1712120208280878592	../lib/libSocketHandler.so	2fb634c33fd5ada4
+406	487	1712120208144878122	../lib/libUtility.so	2925a4cb78c48d9e
+1	329	1712120715934633893	src/app/CMakeFiles/epoll_server.dir/server2.cpp.o	e9ea813b2ba88f1b
+2	468	1712120208124878052	src/SocketHandler/CMakeFiles/SocketHandler.dir/socket_handler.cpp.o	efe321e15dc05a73
+1	391	1712120208048877790	src/Socket/CMakeFiles/Socket.dir/server_socket.cpp.o	742f9e63822ec4c8
+487	556	1712120208212878357	../lib/libSocket.so	e789b5fd58d86624
+1	407	1712120208064877845	src/Socket/CMakeFiles/Socket.dir/socket.cpp.o	60bfee6871c42c76
+395	452	1712120208112878011	../lib/libTask.a	5b0b00aa687052e9
+330	401	1712120716006634142	../bin/epoll_server	504e2c05243359b1
